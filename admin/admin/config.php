@@ -1,8 +1,8 @@
 <?php 
 $host = "localhost"; 
 $user = "root"; 
-$pass = "kira"; 
-$db = "pathwaytutors"; 
+$pass = ""; 
+$db = ""; 
 $conn = mysqli_connect($host, $user, $pass);
 mysqli_select_db($conn,$db);
 
