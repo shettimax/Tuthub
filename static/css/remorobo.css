@@ -1,0 +1,27 @@
+/* CSS Document */
+
+.arrow div div {
+    background-image: none;
+    padding: 10px;
+}
+
+
+
+.arrow {
+  background: #333;
+  color: #fff;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.arrow:nth-child(2) {
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+
+.arrow:nth-child(3) {
+	margin-top: 0;}
+
