@@ -14,6 +14,7 @@ and lots more
 ----
 
 BEL0W ARE DETAILS OF HOW THE PAGES W0RK YOU CAN PICK AL0T OF POINT AND ADD TO YOUR PROJECT NOTES
+
 #offers.php
 happen to be landing page detailing offers/fields we offer tutorials on
 as you can see from line 30 to line 49
