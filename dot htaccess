@@ -1,0 +1,1 @@
+AddHandler application/x-httpd-php56 .php .php5
