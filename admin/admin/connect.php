@@ -2,8 +2,8 @@
 //include_once($_SERVER['DOCUMENT_ROOT'].'/git/web/remoroboinclude/globals.php');
 $servername = "localhost";
 $username = "root";
-$password = "kira";
-$dbname="pathwaytutors";
+$password = "";
+$dbname="";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
