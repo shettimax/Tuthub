@@ -39,7 +39,7 @@ $query = "SELECT * FROM account WHERE label='$walletid'";
     }
   }
 
-$result1 = mysqli_query($conn,"SELECT * FROM `tutors` WHERE course='$course' and state='$place' LIMIT 3");
+$result1 = mysqli_query($conn,"SELECT * FROM `tutors` WHERE course='$course' and state='$place' ORDER BY RAND() LIMIT 1");
             $count1 = mysqli_num_rows($result1);
             if (mysqli_num_rows($result1) > 0) 
             {
@@ -66,10 +66,10 @@ $result1 = mysqli_query($conn,"SELECT * FROM `tutors` WHERE course='$course' and
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="./static/images/remorobo.png" type="image/png" />
-  <link rel="icon" href="./static/images/remorobo.png" type="image/png" />
+    <link rel="shortcut icon" href="./static/images/TutHub.png" type="image/png" />
+  <link rel="icon" href="./static/images/TutHub.png" type="image/png" />
   <link href="./static/css.php" rel="stylesheet" type="text/css">
-  <link href="./static/css/remorobo.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/TutHub.css" rel="stylesheet" type="text/css">
  
   <!-- end My Custom CSS-->
   
@@ -194,7 +194,7 @@ document.getElementById("dropdown-menu").innerHTML = "<li><strong>Welcome </stro
   
 </head>
 <body>
-
+<body oncontextmenu="return false;">
 
 <div class="container">
   
@@ -287,7 +287,7 @@ document.getElementById("dropdown-menu").innerHTML = "<li><strong>Welcome </stro
                                                     else
                                                     {
                                         
-                                                    ?><font color="red">ACCOUNT NOT ACTIVATED !!<br>PLEASE PAY TO OUR VENDOR TO UNLOCK MATERIALS<br>below vendor is available<br></font><a href="https://wa.me/08143542252?text=Hello%20pathwaytutors%20vendor01%20i%20want%20to%20pay/unlock%20my%20courses%20myid: <?php echo $walletid; ?>"> message me </a><?php } ?>
+                                                    ?><font color="red">ACCOUNT NOT ACTIVATED !!<br>PLEASE PAY TO OUR VENDOR TO UNLOCK MATERIALS<br>below vendor is available<br></font><a href="https://wa.me/08143542252?text=Hello%20TutHub%20vendor01%20i%20want%20to%20pay/unlock%20my%20courses%20*ID:* <?php echo $walletid; ?> for <?php echo $planx; ?>"> message me </a><?php } ?>
   </b>
     <br>
      joined:
@@ -317,13 +317,12 @@ echo strtoupper("$place");
                                                       <br>
                                                       <?php echo $mail;?>
                                                       <br>
-                                                      <a href="https://wa.me/<?php echo $phone;?>?text=Hello%20pathwaytutors%20vendor01%20i%20want%20to%20pay/unlock%20my%20courses%20myid: <?php echo $walletid; ?>"> message me </a> or <a href="<?php echo $social;?>">view my facebook</a></center>
+                                                      <a href="https://wa.me/<?php echo $phone;?>?text=Hello%20TutHub%20vendor01%20i%20want%20to%20pay/unlock%20my%20courses%20myid: <?php echo $walletid; ?>"> message me </a> or <a href="<?php echo $social;?>">view my facebook</a></center>
                                                       <?php } 
                                                     else if($adderr!='1')//if moderator ignore below message else tell the user no match for tutor in his state
                                                     {
                                         
-                                                    ?><center>
-                                                      <font color="red">OOPS..!<br>NO TUTOR WITHIN YOUR STATE</font></center>
+                                                    ?>.
                                                     <?php } ?>
     
     
@@ -338,7 +337,7 @@ echo strtoupper("$place");
   <div class="container">
     <p class="text-muted">M4XD3V<a href="#" target="_blank">
             <!--<img src="./static/images/Donate-PayPal-green.svg" title="support us">-->
-            </a>&copy; <a href="http://t.me/mazangizo" target="_blank">pathwaytutors crafted with ♥ 2021</a></p>
+            </a>&copy; <a href="http://t.me/mazangizo" target="_blank">TutHub crafted with ♥ 2021</a></p>
   </div>
 </footer>
 <div id="dialog-placeholder"></div>
@@ -368,7 +367,7 @@ echo strtoupper("$place");
         <div class="modal-footer">
             
     <!--<div class="checkbox"> -->
-  <label><input type="chefckbox" value="pathwaytutors"  id="divmssagesDismissAllCheckBox" value="" readonly></label>
+  <label><input type="chefckbox" value="TutHub"  id="divmssagesDismissAllCheckBox" value="" readonly></label>
 <!-- </div> -->
          <!-- <button type="button" class="btn btn-default" onclick="dismiss(currentNotificationId)">Dismiss</button>-->
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
