@@ -95,7 +95,7 @@ a module to update admin password it requires a session to distinguish administr
 
 --------------forget d below it only detail file sharing via google drive--------------
 pdfs
-mazangizo
+nameofdrivefolder
 
 create group
 
