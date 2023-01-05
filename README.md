@@ -100,7 +100,7 @@ nameofdrivefolder
 create group
 
 export mail column where paid =1 as csv from db
-import csv to created group in google contacts of mazangizo
+import csv to created group in google contacts of contact_group_you_created
 
 ------------
 pdf in pathwaytutors folder
