@@ -28,6 +28,7 @@ and variables named respectively echoed
 basically call offers.php with the iclude 'offers.php'; function
 such is  set to avoid replication
 ---
+
 #reg.php
 the registration page
 is entwined to regi.php
@@ -35,6 +36,7 @@ reg.php dependantly require/include regi.php
 as you see regi.php line 1 to line 36 basically runs and serve as the backbone containing d algorithm
 while reg.php line 61 to 90 uses session & vars of reg.php to detail users of their registration progress (using sweet alert library than ordinary javascript pop up these are engineered modal like)
 ---
+
 #log.php
 the login page
 is entwined to logi.php
@@ -78,6 +80,7 @@ $conn = mysqli_connect //is the function for php database connection
 ($host, $user, $pass); //
 mysqli_select_db($conn,$db); is the database selection function that returns either true or false
 ------------
+
 #execute.php
 is entwined with coonnect.php and fetch.php
 ------------
@@ -86,6 +89,7 @@ is entwined with coonnect.php and fetch.php
 a function created to reduce the notifications in user dashboard by dismissing it
 on dismiss button click an sql query is passed to update (table.column) and set notification.dismiss to 1 meaning it won't show the user itself referencing to fetch.php query($select_query = "SELECT * FROM `notification` WHERE `dismiss` = 0 AND `courseid` = '$course' ORDER BY `notification`.`date`) thr where clause says dismiss must be = 0
 ---------------
+
 #ajax.php 
 not really the ajax logic as the script is named but it manipulates date having it contain date and time functions
 
