@@ -3,7 +3,7 @@
 //shettimax@yahoo.com
 $servername = "localhost";
 $username = "root";
-$password = "kira";
+$password = "";
 $dbname="pathwaytutors";
 
 // Create connection
